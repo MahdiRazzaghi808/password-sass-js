@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/iziToast.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+
+            <div class="title">
+                <h1> Generate a secure password</h1>
+                <p>Use our online password generator to instantly create a secure, random password.</p>
+            </div>
+
+            <div class="show">
+                <input type="text">
+                <div class="image-wrapper">
+                    <img src="./image/copy.png" alt="" class="copy">
+                    <img src="./image/icon-generate-new.svg" alt="" class="agin">
+                </div>
+
+                <div class="progress">
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="customize">
+                <h2>
+                    Customize your password
+                </h2>
+                <div class="line"></div>
+
+                <div class="setting">
+
+                    <div class="length">
+                        <p>password length</p>
+
+                        <div>
+                            <input type="number" min="4" max="99" value="6" class="change">
+                            <!-- <input type="range" min="4" max="99"> -->
+                        </div>
+                    </div>
+
+                    <div class="options">
+
+                        <div class="options-wrapper">
+                            <div>
+                                <input type="checkbox" id="uppercase" value="uppercase" class="change" checked>
+                                <label for="uppercase">Uppercase</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" id="lowercase" value="lowercase" class="change" checked>
+                                <label for="lowercase">Lowercase</label>
+                            </div>
+                        </div>
+
+
+                        <div class="options-wrapper">
+                            <div>
+                                <input type="checkbox" id="numbers" value="numbers" class="change" checked>
+                                <label for="numbers">Numbers</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" id="symbols" value="symbols" class="change" checked>
+                                <label for="symbols">Symbols</label>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/iziToast.min.js"></script>
+</body>
+
+</html>
